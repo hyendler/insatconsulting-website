@@ -1,0 +1,436 @@
+/* custom css */
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background-color: black;
+}
+
+h1, 
+h2,
+h3,
+h4 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+}
+
+
+/* Navigation styling -------- */
+
+.navbar-custom {
+	top: 0px;
+	background-color: black;
+	color: white;
+	border-radius: 0px;
+	margin-bottom:0px;
+}
+
+.navbar a {
+	color: white;
+	font-size: 1.5em;
+	margin-top: .5em;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	
+}
+
+.nav.navbar-nav {
+	line-height: 1.5em;
+	height: ;
+}
+
+#in, 
+#consulting,
+#sat {
+	font-size: 1.5em;
+}
+
+#in,
+#consulting {
+	font-weight: 300;
+	color: white;
+}
+
+#sat {
+	font-weight: 800;
+	color: #ff9933;
+}
+
+/* Jumbotron styleing -------- */
+
+/*.jumbotron {
+    margin-bottom: 0px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    height: 100%
+}
+
+*/
+
+
+
+#intro h4 {
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #ffcc66;
+}
+
+/* full image background styling -------- */
+
+.height-full {
+	height: 100vh;
+}
+
+/* spiral section --------- */
+
+#overview {
+	background-color: white;
+}
+
+#overview h2 {
+	margin-top: 8%;
+	font-family: 'Open-Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2.5em;
+}
+
+#inner {
+  	position: relative;
+    height: 700px;
+    margin: 10% auto 0 auto;
+    width: 700px;
+}
+
+#overview .image-block {
+	padding-top: 0px;
+	margin-bottom: 10px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+
+div.rotate {
+  height: 320px;
+  margin-left: 300px;
+  position: absolute;
+  transform-origin: bottom center;
+  width: 100px;
+}
+
+.arrow {
+  position: absolute;
+  background: darkblue;
+  width: 20px;
+  height: 5px;
+  -webkit-transform-origin: 0% 50%;
+     -moz-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+.arrow:after {
+  display: block;
+  content:'';
+  border-top: 7px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 14px solid darkblue;
+  -webkit-transform: translate(20px, -5px);
+     -moz-transform: translate(20px, -5px);
+          transform: translate(20px, -5px);
+}
+
+.icon-title {
+	font-family: 'Open Sans', sans-serif;
+	margin-top: 10px;
+	color: black;
+}
+
+.icon-title h4 {
+	width: 140px;
+	margin-left: -20px;
+}
+
+a.icon-title {
+	margin-top: 10px;
+}
+
+
+.arrow1 {
+	transform: rotate(25deg);
+	padding-top: 50px;
+}
+
+.program-rotate { 
+	transform: rotate(40deg); 
+}
+
+.program-icon {
+	transform: rotate(-40deg);
+}
+
+.arrow2 {
+	transform: rotate(63deg);
+	padding-top: 50px
+}
+
+.design-rotate { 
+	transform: rotate(80deg); 
+}
+
+.design-icon {
+	transform: rotate(-80deg);
+}
+
+.arrow3 {
+	transform: rotate(106deg);
+	padding-top: 70px;
+}
+
+.development-rotate {
+	transform: rotate(120deg);
+}
+
+.development-icon {
+	transform: rotate(-120deg);
+}
+
+.arrow4 {
+	transform: rotate(145deg);
+	padding-top: 95px;
+}
+
+.deployment-rotate {
+	transform: rotate(160deg);
+}
+
+.deployment-icon {
+	transform: rotate(-160deg);
+}
+
+.arrow5 {
+	transform: rotate(188deg);
+	padding-top: 85px;
+}
+
+.orbit-rotate {
+	transform: rotate(200deg);
+}
+
+.orbit-icon {
+	transform: rotate(-200deg);
+}
+
+.arrow6 {
+	transform: rotate(227deg);
+	padding-top: 80px;
+}
+
+.eol-rotate {
+	transform: rotate(240deg);
+}
+
+.eol-icon {
+	transform: rotate(-240deg);
+}
+
+.arrow7 {
+	transform: rotate(269deg);
+	padding-top: 75px;
+}
+
+.legal-rotate {
+	transform: rotate(280deg);
+}
+
+.legal-icon {
+	transform: rotate(-280deg);
+}
+
+
+
+
+/* experience section ------- */
+
+
+#experience {
+	margin-bottom: 0px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 360px;
+}
+
+#experience .container {
+	padding: 150px 0px;
+}
+
+#experience .col-md-8 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	text-align: center;
+  	padding: 0px 25px;
+}
+
+#experience .col-md-8 > h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+  	color: #ffcc66;
+  	line-height: 150%;
+}
+
+/* expertise section styling -------- */
+
+
+#expertise {
+	padding-bottom: 10%;
+	background-color:white;
+}
+
+.expertise-title {
+	margin-top: 10%;
+	margin-bottom: 11%;
+	font-family: 'Open-Sans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 2.5em;
+}
+
+#bold {
+	color: #ff9933;
+	font-weight: 800;
+}
+
+#expertise h3 {
+	font-family: 'Open-Sans', sans-serif;
+	font-weight: 400;
+}
+
+.about-row {
+	margin-bottom: 15px;
+}
+
+.row {
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.about-row
+.about-section {
+	padding: 0px 50px;
+}
+
+.image-block {
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-size: 100%;
+	float: left;
+	padding-top: .5em;
+}
+
+.about-row
+.content-block {
+	width: auto;
+	min-height: 100px;
+	margin-left: 122px;
+	margin-top: 33px;
+}
+
+.about-row
+.content-block h3 {
+
+}
+
+ul  {
+ padding-left:0;   
+}
+
+ul li  {
+ list-style-position:inside;
+ margin: 0 0 10px;
+}
+
+
+
+/* Footer -------- */
+
+footer {
+	margin-bottom: 0px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+}
+
+.contact-title {
+	color: #ffcc66;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 3em;
+	margin: 100px 0px 30px 0px;
+	text-align: center;
+}
+
+
+footer .subtitle {
+	color: #ffcc66;
+	font-style: italic;
+	font-size: 1.5em;
+}
+
+.contact-info {
+	color: white;
+	padding-bottom: 15px;
+}
+
+.custom-button {
+	border: 2px solid;
+	border-color: #ffcc66;
+}
+
+
+
+
+/* Word Wrap -------- */
+.word-wrap { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+
+/* Clear fix -------- */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container #unused {
+	display: none;
+}
+
+.empty-space {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+
+}
+
