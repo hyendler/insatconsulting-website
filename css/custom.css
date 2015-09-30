@@ -1,4 +1,6 @@
 /* custom css */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+
 
 html {
 	height: 100%;
@@ -17,48 +19,78 @@ h4 {
 	font-weight: 300;
 }
 
+h2 {
+	text-transform: uppercase;
+	font-size: 2.5em;
+}
+
+h1 {
+	font-size: 55px;
+}
+
 
 /* Navigation styling -------- */
 
 .navbar-custom {
 	top: 0px;
-	background-color: black;
+	background-color: transparent;
 	color: white;
 	border-radius: 0px;
 	margin-bottom:0px;
 }
 
+.background-image {
+	margin-top: -168px;
+}
+
 .navbar a {
 	color: white;
-	font-size: 1.5em;
-	margin-top: .5em;
+	font-size: 1.3em;
+	font-weight: 300;
+	margin-top: 20px;
 }
 
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-	
+.nav>li>a:hover {
+	background-color:transparent;
+	color:white;
+	border: solid 2px transparent;
 }
 
-.nav.navbar-nav {
-	line-height: 1.5em;
-	height: ;
+#software-hover a:hover {
+	background-image: url(img/stars_195.jpg);
 }
 
-#in, 
-#consulting,
-#sat {
-	font-size: 1.5em;
+#lifecycle-hover a:hover {
+	background-image: url(img/stars_160.jpg);
 }
 
-#in,
-#consulting {
+#thermal-hover a:hover {
+	background-image: url(img/stars_151.jpg);
+}
+
+
+.nav>li>a {
+	border: solid 2px white;
+	margin-right: 5px;
+}
+
+
+.title-white {
 	font-weight: 300;
 	color: white;
 }
 
-#sat {
+.title-golden {
 	font-weight: 800;
 	color: #ff9933;
 }
+
+
+.navbar-header a:hover {
+	text-decoration: none;
+}
+
+
 
 /* Jumbotron styleing -------- */
 
@@ -76,12 +108,30 @@ h4 {
 
 
 
-#intro h4 {
-
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
+nav h4 {
 	color: #ffcc66;
 }
+
+/* index overview */
+#overview {
+	background-color: white;
+	text-align: center;
+}
+
+#overview img {
+	display: block;
+	margin: 0 auto;
+}
+
+#overview h2 {
+	margin: 8% 0;
+}
+
+#overview .container {
+	padding-bottom: 12%;
+}
+
+
 
 /* full image background styling -------- */
 
@@ -91,26 +141,22 @@ h4 {
 
 /* spiral section --------- */
 
-#overview {
+#lifecycle-overview {
 	background-color: white;
 }
 
-#overview h2 {
-	margin-top: 8%;
-	font-family: 'Open-Sans', sans-serif;
-	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 2.5em;
+#lifecycle-overview h2 {
+	margin-top: 8%;T
 }
 
 #inner {
   	position: relative;
     height: 700px;
-    margin: 10% auto 0 auto;
+    margin: 1% auto 0 auto;
     width: 700px;
 }
 
-#overview .image-block {
+#lifecycle-overview .image-block {
 	padding-top: 0px;
 	margin-bottom: 10px;
 }
@@ -120,9 +166,20 @@ h4 {
     align-items: center;
 }
 
+ @media (min-width : 1200px) {
+ 		div.rotate {
+ 			height: 320px;
+ 		}
+    }
+
+    /* Medium Devices, Desktops */
+    @media (min-width : 1500px) {
+    	div.rotate {
+ 			height: 370px;
+ 		}
+    }
 
 div.rotate {
-  height: 320px;
   margin-left: 300px;
   position: absolute;
   transform-origin: bottom center;
@@ -131,7 +188,7 @@ div.rotate {
 
 .arrow {
   position: absolute;
-  background: darkblue;
+  background: white;
   width: 20px;
   height: 5px;
   -webkit-transform-origin: 0% 50%;
@@ -144,21 +201,21 @@ div.rotate {
   content:'';
   border-top: 7px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 14px solid darkblue;
+  border-left: 14px solid white;
   -webkit-transform: translate(20px, -5px);
      -moz-transform: translate(20px, -5px);
           transform: translate(20px, -5px);
 }
 
 .icon-title {
-	font-family: 'Open Sans', sans-serif;
 	margin-top: 10px;
-	color: black;
+	color: white;
 }
 
 .icon-title h4 {
 	width: 140px;
 	margin-left: -20px;
+	text-align: center;
 }
 
 a.icon-title {
@@ -236,11 +293,11 @@ a.icon-title {
 	padding-top: 80px;
 }
 
-.eol-rotate {
+.propellant-rotate {
 	transform: rotate(240deg);
 }
 
-.eol-icon {
+.propellant-icon {
 	transform: rotate(-240deg);
 }
 
@@ -249,12 +306,20 @@ a.icon-title {
 	padding-top: 75px;
 }
 
-.legal-rotate {
+.eol-rotate {
 	transform: rotate(280deg);
 }
 
-.legal-icon {
+.eol-icon {
 	transform: rotate(-280deg);
+}
+
+.legal-rotate {
+	transform: rotate(320deg);
+}
+
+.legal-icon {
+	transform: rotate(-320deg);
 }
 
 
@@ -300,15 +365,6 @@ a.icon-title {
 #expertise {
 	padding-bottom: 10%;
 	background-color:white;
-}
-
-.expertise-title {
-	margin-top: 10%;
-	margin-bottom: 11%;
-	font-family: 'Open-Sans', sans-serif;
-	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 2.5em;
 }
 
 #bold {
@@ -378,13 +434,12 @@ footer {
     height: 540px;
 }
 
-.contact-title {
-	color: #ffcc66;
-	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 3em;
-	margin: 100px 0px 30px 0px;
+h1.contact-title {
+	margin-top: 20%;
+	font-size: 75px;
 	text-align: center;
+	margin-bottom: 5%;
+
 }
 
 
@@ -406,7 +461,107 @@ footer .subtitle {
 
 
 
+/* Software page */
 
+#software-intro h1 {
+	padding-top: 20%;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+	font-size: 75px;
+}
+
+#software-overview {
+	background-color: white;
+}
+
+#software-overview h3 {
+	text-align: center;
+}
+
+/* Lifecycle page */
+
+#lifecycle-overview > h1 {
+	padding-top: 25%;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+	font-size: 75px;
+	position: absolute;
+
+}
+
+/* Thermal Page */
+
+#thermal-overview {
+	background-color: white;
+}
+
+#thermal-intro > h1 {
+	padding-top: 25%;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+	font-size: 75px;
+	margin-left: 150px;
+}
+
+#thermal-overview img {
+	margin: 0px auto;
+}
+
+
+
+#thermal-overview .subpage-title {
+	margin-bottom: 5%;
+}
+
+/* general subpage css */
+
+.subpage-title {
+	margin-top: 10%;
+	margin-bottom: 7%;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+#expertise .subpage-title {
+	margin-top: 10%;
+	margin-bottom: 10%;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+ul.list {
+	font-size: 1.3em;
+	font-weight: 300;
+}
+
+.we-offer {
+	margin-bottom: 5%
+}
+
+h2.img-title {
+	font-size: 1.75em;
+	margin-top: 15%;
+	margin-bottom: 4%;
+}
+
+h3.img-subtitle {
+	font-size: 1.25em;
+	font-weight: 600;
+	margin-bottom: 25%;
+}
+
+.lead {
+	font-size: 1.5em;
+}
+
+div.bottom-row {
+	margin-bottom: 20%
+}
 /* Word Wrap -------- */
 .word-wrap { 
    white-space: pre-wrap;      /* CSS3 */   
@@ -422,6 +577,11 @@ footer .subtitle {
   clear: both;
 }
 
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+}
+
 .container #unused {
 	display: none;
 }
@@ -431,6 +591,5 @@ footer .subtitle {
 	width: 100%;
 	height: 100%;
 	background-size: 100%;
-
 }
 
